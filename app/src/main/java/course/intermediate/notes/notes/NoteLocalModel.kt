@@ -1,11 +1,10 @@
 package course.intermediate.notes.notes
 
-import course.intermediate.notes.models.IContentModel
 import course.intermediate.notes.models.Note
 import course.intermediate.notes.models.ResultCallback
 import javax.inject.Inject
 
-class NoteLocalModel @Inject constructor(): IContentModel<Note> {
+class NoteLocalModel @Inject constructor(): INoteModel {
 
     override fun getFakeData(): MutableList<Note> = mutableListOf(
         Note("Test Note One"),

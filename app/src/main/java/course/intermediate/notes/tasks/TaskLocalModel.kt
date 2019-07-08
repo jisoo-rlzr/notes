@@ -1,12 +1,11 @@
 package course.intermediate.notes.tasks
 
-import course.intermediate.notes.models.IContentModel
 import course.intermediate.notes.models.ResultCallback
 import course.intermediate.notes.models.Task
 import course.intermediate.notes.models.Todo
 import javax.inject.Inject
 
-class TaskLocalModel @Inject constructor(): IContentModel<Task>{
+class TaskLocalModel @Inject constructor(): ITaskModel{
 
     override fun getFakeData(): MutableList<Task> = mutableListOf(
         Task(
